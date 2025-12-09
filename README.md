@@ -443,7 +443,8 @@ Example: `users:10:0` for user list, `stats:microsoft` for user stats
 
 ### Browser Testing
 
-Simply paste URLs in your browser:
+Simply paste URLs in your browser
+But after running in terminal main file i.e. app.js:
 
 ```
 http://localhost:3000/api/health
@@ -497,6 +498,47 @@ Import these requests into Postman:
 8. **Clear Cache**
    - Method: DELETE
    - URL: `http://localhost:3000/api/cache/clear`
+
+# screenshots/
+
+## Sample Outputs
+
+### Health Check
+
+![Health Check](./screenshots/image.png)
+
+### User Details
+
+![User Details](./screenShots/profile%20details.png)
+
+### Filtered Repositories
+
+![Repos Filtered](./screenShots/query%20&%20limit.png)
+
+### Using Query parameters
+
+![Filter](./screenShots/Screenshot%202025-12-09%20104715.png)
+
+### User Statistics
+
+![User Stats](./screenShots/your_stats.png)
+
+### Specific Repo
+
+![Specific Repo](./screenShots/Specific_Repo.png)
+
+### Error
+
+![Error](./screenShots/Error.png)
+
+### Cache Clear
+
+![Cache Clear](./screenShots/Cache_Clear.png)
+
+```
+
+4. **Update `.gitignore` (if images are large):**
+```
 
 ### Testing Cache Functionality
 
@@ -595,26 +637,12 @@ GitHub REST API v3 was selected because:
 - Invalid sort options fall back to 'updated'
 - Missing parameters use sensible defaults
 
-### Data Transformation
-
-- Raw GitHub API responses simplified for clarity
-- Only relevant fields included in responses
-- Consistent JSON structure across all endpoints
-- Timestamps preserved in ISO 8601 format
-
 ### Architecture Decisions
 
 - **Separation of concerns**: Routes → Services → API Client
 - **Middleware pattern**: Centralized error handling
 - **Service layer**: Business logic isolated from routing
 - **Reusable client**: Single axios instance with interceptors
-
-### Production Considerations
-
-- CORS enabled for frontend integration
-- Structured error responses for debugging
-- Cache statistics for monitoring
-- Environment variable support for configuration
 
 ### Limitations
 
@@ -644,17 +672,3 @@ This service integrates with the following GitHub REST API v3 endpoints:
 4. `GET /repos/:owner/:repo` - Get repository details
 
 All responses are cached and transformed for optimal consumption.
-
-## License
-
-MIT
-
-## Author
-
-Built for GLOBAL TREND API Integration Internship Assignment
-
-## Support
-
-For issues or questions, please open an issue in the repository.
-
-![alt text](image.png)
