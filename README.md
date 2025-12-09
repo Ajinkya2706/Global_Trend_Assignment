@@ -656,3 +656,5 @@ Built for GLOBAL TREND API Integration Internship Assignment
 ## Support
 
 For issues or questions, please open an issue in the repository.
+
+![alt text](image.png)
