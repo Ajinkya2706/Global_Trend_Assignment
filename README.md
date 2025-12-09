@@ -499,46 +499,6 @@ Import these requests into Postman:
    - Method: DELETE
    - URL: `http://localhost:3000/api/cache/clear`
 
-# screenshots/
-
-## Sample Outputs
-
-### Health Check
-
-![Health Check](./screenshots/image.png)
-
-### User Details
-
-![User Details](./screenShots/profile%20details.png)
-
-### Filtered Repositories
-
-![Repos Filtered](./screenShots/query%20&%20limit.png)
-
-### Using Query parameters
-
-![Filter](./screenShots/Screenshot%202025-12-09%20104715.png)
-
-### User Statistics
-
-![User Stats](./screenShots/your_stats.png)
-
-### Specific Repo
-
-![Specific Repo](./screenShots/Specific_Repo.png)
-
-### Error
-
-![Error](./screenShots/Error.png)
-
-### Cache Clear
-
-![Cache Clear](./screenShots/Cache_Clear.png)
-
-```
-
-4. **Update `.gitignore` (if images are large):**
-```
 
 ### Testing Cache Functionality
 
